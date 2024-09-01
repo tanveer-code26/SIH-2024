@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="site-name">LinkUp</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about us">About us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="login.html" class="login-button">Login</a></li> <!-- Corrected closing tag -->
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <button class="button">
+                <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+                </svg>
+                Explore
+            </button>
+            <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+            </label>
+            <div class="notification">
+                <div class="bell-container">
+                    <div class="bell"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="image-grid" id="imageGallery"></div>
+    <!-- Images will be dynamically inserted here -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Alumni-Student Interaction Platform</h1>
+            <p>Connecting Alumni and Students for a Better Future</p>
+            <a href="#about" class="cta">Get Started</a>
+        </div>
+    </section>
+    <main>
+        <section class="about-us">
+            <h1>About Us</h1>
+            <p>Welcome to [Your Company/Organization Name], where innovation meets community. Founded with the mission to [briefly state mission or vision], we are dedicated to [core activity or purpose]. Our journey began with a simple idea: to [key founding principle or inspiration], and it has since evolved into a dynamic platform that empowers, connects, and inspires.</p>
+            
+            <h2>Our Vision</h2>
+            <p>At [Your Company/Organization Name], we believe in the transformative power of [your core focus, e.g., technology, education, creativity]. Our vision is to create a [describe ideal impact or outcome, e.g., a world where technology bridges gaps, a community where creativity thrives] and to lead with purpose and integrity.</p>
+
+            <h2>Our Mission</h2>
+            <p>We are committed to [core mission or goal, e.g., delivering innovative solutions, fostering meaningful connections, driving positive change]. Our team of [describe your team, e.g., dedicated professionals, passionate creators, skilled experts] works tirelessly to [specific actions you take, e.g., develop cutting-edge solutions, nurture talent, provide exceptional service].</p>
+
+            <h2>Our Values</h2>
+            <ul>
+                <li><strong>Innovation</strong>: We embrace change and challenge the status quo, constantly seeking new and better ways to achieve excellence.</li>
+                <li><strong>Integrity</strong>: We uphold the highest standards of honesty and transparency in all our interactions.</li>
+                <li><strong>Community</strong>: We believe in the power of collaboration and strive to build a supportive network where everyone can thrive.</li>
+                <li><strong>Excellence</strong>: We are dedicated to delivering superior quality in everything we do, setting benchmarks for others to follow.</li>
+            </ul>
+
+            <h2>Our Story</h2>
+            <p>From our humble beginnings in [mention the year or starting point], we have grown into a [size, scope, or impact of your organization]. Our growth is a testament to the support of our [community, partners, clients], and we are proud of the milestones we’ve achieved together.</p>
+
+            <p>Join us on our journey as we continue to [mention future goals or aspirations]. Whether you’re a [target audience, e.g., student, professional, enthusiast], we invite you to [call to action, e.g., explore our offerings, join our community, collaborate with us] and be part of something extraordinary.</p>
+
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you! Connect with us through [mention contact options, e.g., email, social media, our website] and let’s build a brighter future together.</p>
+        </section>
+    </main>
+    
+    <section id="features" class="features-section">
+        <h2>Our Features</h2>
+        <div class="feature-card">
+            <h3>Alumni Database</h3>
+            <p>Centralized database to store and update information on alumni.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Discussion Forums</h3>
+            <p>Engage in meaningful discussions with alumni and students.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Mentorship Programs</h3>
+            <p>Get guidance from experienced alumni in your field.</p>
+        </div>
+        <!-- Add more features here -->
+    </section>
+
+    <footer class="footer-section">
+        <p>© 2024 AlumniConnect | All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.querySelector('.switch input').addEventListener('change', function () {
+            document.body.classList.toggle('night-mode');
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
